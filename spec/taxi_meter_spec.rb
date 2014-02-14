@@ -1,3 +1,4 @@
+require 'pry-debugger'
 require './taxi_meter.rb'
 
 describe TaxiMeter do
@@ -41,7 +42,7 @@ describe TaxiMeter do
       expect(@meter.start_time).to eq(start_time)
     end
 
-    it "records the time it stopped"
+    xit "records the time it stopped"
   end
 
   context "The taxi meter starts" do
@@ -54,7 +55,7 @@ describe TaxiMeter do
       @meter.start
     end
 
-    it "charges $2.50 for the first 1/6 mile (recorded in cents)"
+    xit "charges $2.50 for the first 1/6 mile (recorded in cents)"
   end
 
 
@@ -68,7 +69,7 @@ describe TaxiMeter do
       @meter.start
     end
 
-    it "has a minimum fare of $13.10"
+    xit "has a minimum fare of $13.10"
   end
 
 end
